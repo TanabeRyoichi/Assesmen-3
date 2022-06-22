@@ -14,7 +14,7 @@
     <string name="euro">euro</string>
     <string name="rpcov_intro">RPCOV adalah sebuah aplikasi untuk mengkoversi mata uang rupiah ke mata uang jepang sehingga seseorang dapat mengetahui nilai mata uang rupiah ke mata uang yen </string>
     <string name="jenis_mata_uang">Jenis Uang</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_notification_channel_id" />
+    <string name="fcm_message" />
 
 </resources>
