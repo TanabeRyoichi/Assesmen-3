@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/konversiFragment">
+
+    <fragment
+        android:id="@+id/konversiFragment"
+        android:name="org.d3if4092.ass3.ui.KonversiFragment"
+        android:label="fragment_konversi"
+        tools:layout="@layout/fragment_konversi" />
+    <fragment
+        android:id="@+id/hasilFragment"
+        android:name="org.d3if4092.ass3.ui.HasilFragment"
+        android:label="fragment_hasil"
+        tools:layout="@layout/fragment_hasil" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="org.d3if4092.ass3.ui.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

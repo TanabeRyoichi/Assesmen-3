@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">RPCOV</string>
+    <string name="core_intro">RPCOV adalah aplikasi untuk mengkoversi mata uang rupiah ke mata uang jepang </string>
+    <string name="jumlah">Masukkan Angka </string>
+    <string name="konversi">Konversi</string>
+    <string name="reset">Reset</string>
+    <string name="yen">Yen</string>
+    <string name="theme">Theme mode</string>
+    <string name="jumlah_x">Jumlah : %1$s</string>
+    <string name="jumlah_invalid">jumlah tidak boleh kosong.</string>
+    <string name="nilai_invalid" />
+    <string name="gender_invalid">mata uang tidak boleh kosong </string>
+    <string name="dollar">Dollar</string>
+    <string name="euro">euro</string>
+    <string name="rpcov_intro">RPCOV adalah sebuah aplikasi untuk mengkoversi mata uang rupiah ke mata uang jepang sehingga seseorang dapat mengetahui nilai mata uang rupiah ke mata uang yen </string>
+    <string name="jenis_mata_uang">Jenis Uang</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
