@@ -1,14 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--on below line we are creating a swipe to refresh layout-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:orientation="vertical"
     tools:context=".ui.AboutFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/rpcov_intro" />
 
-</FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <!--on below line we are creating a simple card view-->
+
+        <!--on below line we are creating a progress bar-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/idBtnVisitCourse"
+            android:layout_marginBottom="-813dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="@string/rpcov_intro" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="@string/Android" />
+
+            <!--on below line we are creating a image view-->
+
+            <!--on below line we are creating our text view-->
+            <ImageView
+                android:id="@+id/idIVCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp" />
+
+            <!--on below line we are creating one more text view-->
+            <TextView
+                android:id="@+id/idTVCourseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTVPreq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <!--on below line we are creating a text view for description-->
+            <TextView
+                android:id="@+id/idTVDesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/idLoadingPB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+
+        <!--on below line we are creating a button to visit our couse-->
+        <Button
+            android:id="@+id/idBtnVisitCourse"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="60dp"
+            android:padding="3dp"
+            android:text="Visit Course"
+            android:textAllCaps="false"
+            android:visibility="visible" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

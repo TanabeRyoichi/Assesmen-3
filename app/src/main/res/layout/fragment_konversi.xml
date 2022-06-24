@@ -82,10 +82,21 @@
 
 
         <Button
+            android:id="@+id/konversiButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="104dp"
+            android:text="@string/konversi"
+            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="64dp"
+            android:layout_marginStart="92dp"
             android:layout_marginTop="112dp"
             android:onClick="reset"
             android:text="@string/reset"
@@ -100,16 +111,15 @@
             android:orientation="vertical"
             app:layout_constraintGuide_begin="20dp" />
 
-        <Button
-            android:id="@+id/konversiButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="104dp"
-            android:layout_marginEnd="24dp"
-            android:text="@string/konversi"
-            app:layout_constraintEnd_toStartOf="@+id/button3"
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="85dp"
+            android:layout_height="87dp"
+            android:layout_marginTop="149dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+            app:layout_constraintTop_toBottomOf="@+id/nama_hint" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

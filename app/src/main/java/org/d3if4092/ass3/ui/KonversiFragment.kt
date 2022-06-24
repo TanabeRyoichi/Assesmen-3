@@ -1,14 +1,16 @@
 package org.d3if4092.ass3.ui
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import org.d3if4092.ass3.R
@@ -19,6 +21,8 @@ class KonversiFragment : Fragment() {
 
     private lateinit var binding: FragmentKonversiBinding
     private lateinit var db: DatabaseReference
+
+    private  val image = "https://upload.wikimedia.org/wikipedia/commons/0/0e/Yen-teken.png"
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,6 +39,12 @@ class KonversiFragment : Fragment() {
             konversi()
         }
         binding.button3.setOnClickListener { reset() }
+
+        val image1 = view.findViewById<ImageView>(R.id.imageView)
+
+        Glide.with(this)
+            .load(image)
+            .into(image1)
     }
 
     @SuppressLint("StringFormatMatches")
